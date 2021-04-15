@@ -1,0 +1,10 @@
+<%= form_for @book do |f| %>
+  <% if @book.errors.any? %>
+  <%= @v.errors.count %>
+    <ul>
+      <% @book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+    
+  <% end %>
